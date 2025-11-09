@@ -33,3 +33,94 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frühstücks-Rezepte</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  .recipe-card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+  }
+  .recipe-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .recipe-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .recipe-description {
+    font-size: 14px;
+    color: #333;
+  }
+  .recipe-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<h1>Meine Frühstücks-Rezepte</h1>
+
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">1. Avocado-Toast</div>
+  <div class="recipe-description">Ein schneller, gesunder Start in den Tag, der Energie liefert.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 1 Scheibe Vollkornbrot, ½ Avocado, Salz, Pfeffer, Zitronensaft, optional Spiegelei oder Tomaten.<br>
+    <strong>Zubereitung:</strong> Brot toasten, Avocado zerdrücken und würzen, auf das Brot streichen, optional Ei oder Tomaten hinzufügen.<br>
+    <em>Tipp:</em> Perfekt für stressfreie Morgen, die trotzdem lecker sind.
+  </div>
+</div>
+
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">2. Overnight Oats</div>
+  <div class="recipe-description">Ein Frühstück, das über Nacht vorbereitet wird – morgens direkt genießen.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 50 g Haferflocken, 150 ml Milch oder pflanzliche Alternative, 1 TL Honig, Früchte, Nüsse.<br>
+    <strong>Zubereitung:</strong> Haferflocken mit Milch und Honig in ein Glas geben, Früchte und Nüsse hinzufügen, über Nacht im Kühlschrank quellen lassen.<br>
+    <em>Tipp:</em> Perfekt für vielbeschäftigte Morgen oder zum Mitnehmen.
+  </div>
+</div>
+
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">3. Rührei mit Gemüse</div>
+  <div class="recipe-description">Herzhaft, eiweißreich und sättigend – ideal für einen energiegeladenen Start.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 2–3 Eier, ½ Paprika, ½ Zwiebel, Handvoll Spinat, Salz, Pfeffer, Öl.<br>
+    <strong>Zubereitung:</strong> Gemüse klein schneiden und anbraten, Eier verquirlen und dazugeben, leicht stocken lassen, würzen.<br>
+    <em>Tipp:</em> Perfekt, um morgens schon Gemüse unterzubringen.
+  </div>
+</div>
+
+<!-- Hier kannst du die restlichen Rezepte 4 bis 15 auf gleiche Weise einfügen -->
+
+<script>
+function toggleDetails(card) {
+  const details = card.querySelector('.recipe-details');
+  if (details.style.display === 'block') {
+    details.style.display = 'none';
+  } else {
+    details.style.display = 'block';
+  }
+}
+</script>
+
+</body>
+</html>
