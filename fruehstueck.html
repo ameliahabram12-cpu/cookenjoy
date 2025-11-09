@@ -33,4 +33,230 @@
   </div>
 </body>
 </html>
-  
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frühstücks-Rezepte</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .recipe-card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+  }
+  .recipe-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .recipe-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .recipe-description {
+    font-size: 14px;
+    color: #333;
+  }
+  .recipe-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<h1>Meine Frühstücks-Rezepte</h1>
+
+<!-- Rezept 1 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">1. Avocado-Toast</div>
+  <div class="recipe-description">Ein schneller, gesunder Start in den Tag, der Energie liefert.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 1 Scheibe Vollkornbrot, ½ Avocado, Salz, Pfeffer, Zitronensaft, optional Spiegelei oder Tomaten.<br>
+    <strong>Zubereitung:</strong> Brot toasten, Avocado zerdrücken und würzen, auf das Brot streichen, optional Ei oder Tomaten hinzufügen.<br>
+    <em>Tipp:</em> Perfekt für stressfreie Morgen, die trotzdem lecker sind.
+  </div>
+</div>
+
+<!-- Rezept 2 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">2. Overnight Oats</div>
+  <div class="recipe-description">Ein Frühstück, das über Nacht vorbereitet wird – morgens direkt genießen.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 50 g Haferflocken, 150 ml Milch oder pflanzliche Alternative, 1 TL Honig, Früchte, Nüsse.<br>
+    <strong>Zubereitung:</strong> Haferflocken mit Milch und Honig in ein Glas geben, Früchte und Nüsse hinzufügen, über Nacht im Kühlschrank quellen lassen.<br>
+    <em>Tipp:</em> Perfekt für vielbeschäftigte Morgen oder zum Mitnehmen.
+  </div>
+</div>
+
+<!-- Rezept 3 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">3. Rührei mit Gemüse</div>
+  <div class="recipe-description">Herzhaft, eiweißreich und sättigend – ideal für einen energiegeladenen Start.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 2–3 Eier, ½ Paprika, ½ Zwiebel, Handvoll Spinat, Salz, Pfeffer, Öl.<br>
+    <strong>Zubereitung:</strong> Gemüse klein schneiden und anbraten, Eier verquirlen und dazugeben, leicht stocken lassen, würzen.<br>
+    <em>Tipp:</em> Perfekt, um morgens schon Gemüse unterzubringen.
+  </div>
+</div>
+
+<!-- Rezept 4 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">4. Smoothie-Bowl</div>
+  <div class="recipe-description">Fruchtig, cremig und dekorativ – ein Frühstück, das glücklich macht.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 1 Banane, 150 g gefrorene Beeren, 100 g Joghurt, Toppings: Granola, Nüsse, Samen.<br>
+    <strong>Zubereitung:</strong> Banane, Beeren und Joghurt pürieren, in eine Schüssel geben, mit Toppings dekorieren.<br>
+    <em>Tipp:</em> Bunte Toppings machen das Frühstück besonders attraktiv.
+  </div>
+</div>
+
+<!-- Rezept 5 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">5. Bananen-Pancakes</div>
+  <div class="recipe-description">Einfach, fluffig und natürlich süß – ohne Zuckerzusatz.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 1 reife Banane, 2 Eier, 30 g Haferflocken, Öl, optional Beeren oder Ahornsirup.<br>
+    <strong>Zubereitung:</strong> Banane zerdrücken, mit Ei und Haferflocken vermischen, kleine Pancakes in Pfanne ausbacken, mit Beeren servieren.<br>
+    <em>Tipp:</em> Kinder lieben diese gesunde Alternative zu klassischen Pancakes.
+  </div>
+</div>
+
+<!-- Rezept 6 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">6. Quark mit Beeren</div>
+  <div class="recipe-description">Frisch, proteinreich und fruchtig – perfekt für einen leichten Start.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 150 g Magerquark, 50 g Beeren, 1 TL Honig, 1 EL Nüsse.<br>
+    <strong>Zubereitung:</strong> Quark in Schale geben, Beeren, Honig und Nüsse hinzufügen und leicht vermengen.<br>
+    <em>Tipp:</em> Auch super als Snack zwischendurch geeignet.
+  </div>
+</div>
+
+<!-- Rezept 7 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">7. Frühstücks-Burrito</div>
+  <div class="recipe-description">Herzhaft, vielseitig und zum Mitnehmen geeignet.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 1 Tortilla, 2 Eier, 50 g Bohnen, Avocado, Paprika, Tomaten, Salz, Pfeffer.<br>
+    <strong>Zubereitung:</strong> Gemüse anbraten, Eier dazugeben, kurz stocken lassen, mit Bohnen mischen, Tortilla füllen und aufrollen.<br>
+    <em>Tipp:</em> Perfekt für ein sättigendes Frühstück unterwegs.
+  </div>
+</div>
+
+<!-- Rezept 8 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">8. Chia-Pudding</div>
+  <div class="recipe-description">Cremig, sättigend und reich an Omega-3-Fetten.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 3 EL Chiasamen, 150 ml Milch, Früchte, Nüsse.<br>
+    <strong>Zubereitung:</strong> Chiasamen mit Milch vermischen, 4 h oder über Nacht quellen lassen, mit Früchten und Nüssen toppen.<br>
+    <em>Tipp:</em> Nach Belieben süß oder herzhaft zubereiten.
+  </div>
+</div>
+
+<!-- Rezept 9 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">9. Joghurt-Parfait</div>
+  <div class="recipe-description">Schichtweise lecker, perfekt portioniert und hübsch anzusehen.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 150 g Joghurt, 50 g Müsli, 50 g Obst.<br>
+    <strong>Zubereitung:</strong> Schichten aus Joghurt, Müsli und Obst in Glas füllen, wiederholen bis Glas voll.<br>
+    <em>Tipp:</em> Sieht toll aus und ist ideal für Gäste.
+  </div>
+</div>
+
+<!-- Rezept 10 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">10. Vollkorn-Waffeln</div>
+  <div class="recipe-description">Knusprig außen, weich innen – ein Klassiker.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 100 g Vollkornmehl, 1 Ei, 150 ml Milch, 1 TL Backpulver, Obst oder Nussmus.<br>
+    <strong>Zubereitung:</strong> Zutaten zu Teig verrühren, Waffeleisen vorheizen, Teig ausbacken, mit Obst oder Nussmus servieren.<br>
+    <em>Tipp:</em> Am besten frisch genießen.
+  </div>
+</div>
+
+<!-- Rezept 11 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">11. Frühstücks-Smoothie</div>
+  <div class="recipe-description">Flüssiges Frühstück für Energie und Vitamine in einem Glas.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 1 Banane, 1 Handvoll Spinat, 30 g Haferflocken, 150 ml Mandelmilch, optional Proteinpulver.<br>
+    <strong>Zubereitung:</strong> Alles im Mixer pürieren, in Glas füllen, sofort genießen.<br>
+    <em>Tipp:</em> Ideal, wenn morgens wenig Zeit ist.
+  </div>
+</div>
+
+<!-- Rezept 12 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">12. Bagel mit Frischkäse und Lachs</div>
+  <div class="recipe-description">Herzhaft, lecker und perfekt für einen besonderen Frühstücksmoment.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 1 Vollkorn-Bagel, 2 EL Frischkäse, 50 g Räucherlachs, Gurkenscheiben, Kapern.<br>
+    <strong>Zubereitung:</strong> Bagel toasten, Frischkäse bestreichen, Lachs, Gurke, Kapern darauflegen.<br>
+    <em>Tipp:</em> Ideal für gemütliche Wochenenden oder Brunch.
+  </div>
+</div>
+
+<!-- Rezept 13 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">13. Shakshuka</div>
+  <div class="recipe-description">Würziges Frühstück aus der nordafrikanischen Küche – Eier in Tomatensauce.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 1 Dose gehackte Tomaten, 1 Paprika, 1 Zwiebel, 2 Eier, Salz, Pfeffer, Paprikapulver, Öl.<br>
+    <strong>Zubereitung:</strong> Zwiebel und Paprika anbraten, Tomaten hinzufügen, würzen, Eier hineinschlagen, stocken lassen.<br>
+    <em>Tipp:</em> Mit frischem Brot servieren.
+  </div>
+</div>
+
+<!-- Rezept 14 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">14. Müsliriegel selbstgemacht</div>
+  <div class="recipe-description">Gesund, süß und ideal für unterwegs.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 100 g Haferflocken, 50 g Nüsse, 50 g Trockenfrüchte, 3 EL Honig, 1 EL Erdnussmus.<br>
+    <strong>Zubereitung:</strong> Alle Zutaten mischen, in Form drücken, fest werden lassen, in Riegel schneiden.<br>
+    <em>Tipp:</em> Variabel mit Schokolade oder Kokosraspeln.
+  </div>
+</div>
+
+<!-- Rezept 15 -->
+<div class="recipe-card" onclick="toggleDetails(this)">
+  <div class="recipe-title">15. French Toast</div>
+  <div class="recipe-description">Süßes, fluffiges Frühstück, das schnell zubereitet ist.</div>
+  <div class="recipe-details">
+    <strong>Zutaten:</strong> 2 Scheiben Toast, 1 Ei, 50 ml Milch, Zimt, Vanille, Öl oder Butter, Obst oder Ahornsirup.<br>
+    <strong>Zubereitung:</strong> Ei, Milch, Zimt, Vanille verquirlen, Toast eintauchen, goldbraun braten, Obst oder Sirup dazu.<br>
+    <em>Tipp:</em> Fühlt sich wie ein kleiner Sonntagsbrunch an.
+  </div>
+</div>
+
+<script>
+function toggleDetails(card) {
+  const details = card.querySelector('.recipe-details');
+  if (details.style.display === 'block') {
+    details.style.display = 'none';
+  } else {
+    details.style.display = 'block';
+  }
+}
+</script>
+
+</body>
+</html>  
